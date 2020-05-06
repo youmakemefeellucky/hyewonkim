@@ -13,40 +13,42 @@ body {
   font-family: 'RadioGrotesk', Helvetica, sans-serif;
   width: 100%;
   cursor: url("hand1.png"), default;
+  background-color: #EFEEEE;
 }
 
 a {
   cursor: url("hand2.png"), default;
 }
 
-.navbar {
-  overflow: hidden;
-  background-color: #FFF;
-  position: fixed;
-  box-sizing: border-box;
-  margin: 0 0 0 -16px;
-  width: 100%;
-  padding: 12px 0px 12px 16px;
-  z-index: 1;
-}
-
-.navbar a {
-  color: #000;
-  font-size: 24px;
-  text-decoration: none;
-}
-
 ul {
   list-style-type: none;
 }
 
-.menu_l{
-  float: left;
+#navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: #EFEEEE;
+  padding: 0 0 12px 0;
+  top: -4px;
+  left: 0;
 }
 
-.menu_r {
+#navbar a {
+  position: relative;
+  color: #000;
+  font-size: 24px;
+  text-decoration: none;
+  padding: 12px 16px 12px 16px;
+}
+
+#home{
+  float: left;
+  margin-left: -40px;
+}
+
+#apropos {
   float: right;
-  margin-right: 16px;
 }
 
 .button {
@@ -101,11 +103,11 @@ ul {
 
 #bonjour:hover:before {
   content: "Dire bonjour→";
-  color: #FFF;
+  color: #EFEEEE;
   font-size: 44px;
 }
 
-#message {
+#message, #cv{
   border: 4px solid #828282;
   color: #828282;
   top: 200px;
@@ -123,7 +125,12 @@ ul {
 #message:hover:before {
   content: "J'écris un mail";
   color: #1C1C1F;
-  font-size: 52px;
+  font-size: 50px;
+}
+
+#cv:hover {
+  background-color: #828282;
+  color: #1C1C1F;
 }
 
 h1 {
@@ -137,10 +144,18 @@ h3 {
   color: #828282;
   font-weight: 300;
   margin: 10px 0 10px 0;
+  cursor: url("hand2.png"), default;
 }
 
 h3:hover {
   font-style: italic;
+}
+
+h6 {
+  font-size: 24px;
+  color: #000;
+  font-weight: normal;
+  margin: 12px 0 12px 0;
 }
 
 p {
@@ -214,4 +229,25 @@ hr {
 
 .smooth {
   transition: height .5s;
+}
+
+#cvsection {
+  position: relative;
+  padding-left: 16px;
+  background-color: #1C1C1F;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 400px;
+  margin-left: -16px;
+  margin-top: 70px;
+}
+
+#page1 {
+  position: absolute;
+}
+
+#page2 {
+  position: absolute;
+  top: 0;
+  display: none;
 }

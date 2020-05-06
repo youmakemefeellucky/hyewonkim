@@ -11,4 +11,12 @@ $(document).ready(function(){
       }, 500);
       $(this).parent().parent().hide('slow');
   });
+  $( "#apropos" ).on( "click", function() {
+    $( "#page1" ).fadeOut("slow","swing");
+    $( "#page2" ).fadeIn("slow","swing");
+    $('html, body').animate({
+        scrollTop: $("html").offset().top
+    }, 500);
+    return false;
+});
 });
