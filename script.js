@@ -18,5 +18,13 @@ $(document).ready(function(){
         scrollTop: $("html").offset().top
     }, 500);
     return false;
+    });
+    $( "#home" ).on( "click", function() {
+      $( "#page2" ).fadeOut("slow","swing");
+      $( "#page1" ).fadeIn("slow","swing");
+      $('html, body').animate({
+          scrollTop: $("html").offset().top
+      }, 500);
+      return false;
 });
 });
