@@ -143,7 +143,7 @@ h3 {
   font-size: 48px;
   color: #828282;
   font-weight: 300;
-  margin: 10px 0 10px 0;
+  margin: 10px 16px 10px 0;
   cursor: url("hand2.png"), default;
 }
 
@@ -250,4 +250,33 @@ hr {
   position: absolute;
   top: 0;
   display: none;
+}
+
+.photo {
+  width: 70%;
+  margin-top: 20px;
+}
+
+.gif {
+  width: 30%;
+  margin: 20px 20px 0 0;
+}
+
+.video {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+  width: 100%;
+}
+
+.video iframe {
+  border: 0;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+
 }
