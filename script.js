@@ -26,5 +26,5 @@ $(document).ready(function(){
           scrollTop: $("html").offset().top
       }, 500);
       return false;
-});
+    });
 });

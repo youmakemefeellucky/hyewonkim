@@ -18,10 +18,20 @@ body {
 
 a {
   cursor: url("hand2.png"), default;
+  color: black;
+  text-decoration: underline;
+}
+
+a:hover {
+  font-style: italic;
 }
 
 ul {
   list-style-type: none;
+}
+
+.graytext {
+  color: #D3D3D3;
 }
 
 #navbar {
@@ -175,6 +185,7 @@ h6 {
   color: #000;
   font-weight: normal;
   margin: 12px 0 12px 0;
+  bottom: 0;
 }
 
 p {
@@ -269,6 +280,7 @@ hr {
   position: absolute;
   top: 0;
   display: none;
+  height: 100vh;
 }
 
 .photo {
@@ -297,4 +309,8 @@ hr {
   right: 0;
   bottom: 0;
   position: absolute;
+}
+
+.footer {
+  height: 50px;
 }
