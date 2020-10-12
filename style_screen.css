@@ -1,0 +1,120 @@
+body, html {
+  cursor: url("hand1.png"), default;
+}
+
+.fill {
+  margin-top: 2em;
+}
+
+a {
+  cursor: url("hand2.png"), pointer;
+}
+
+a:hover {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 100px;
+}
+
+h3 {
+  font-size: 48px;
+  cursor: url("hand2.png"), pointer;
+}
+
+h3:hover {
+  font-style: italic;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+hr {
+  border: 1px solid #828282;
+  height: 2px;
+}
+
+.button {
+  top: 80px;
+  font-size: 48px;
+}
+
+.link {
+  font-size: 48px;
+  border: 4px solid #828282;
+}
+
+.link:hover {
+  background-color: #828282;
+  color: #1C1C1F;
+}
+
+.ok {
+  margin: 40px 0 24px 0;
+  font-size: 48px;
+  border: 4px solid #828282;
+}
+
+.ok:hover {
+  background-color: #828282;
+  color: #1C1C1F;
+}
+
+#bonjour {
+  border: 4px solid #000;
+}
+
+#bonjour:hover:before {
+  font-size: 44px;
+}
+
+#message {
+  border: 4px solid #828282;
+  top: 200px;
+  margin-bottom: 200px;
+}
+
+#cv {
+  border: 4px solid #828282;
+  bottom: 20%;
+}
+
+#message:hover:before {
+  font-size: 50px;
+}
+
+#ball {
+  margin: 0 0 0 12.5rem;
+}
+
+#ball:hover {
+  cursor: url("hand3.png"), default;
+}
+
+.photo {
+  width: 70%;
+}
+
+.s-photo {
+  width: 50%;
+}
+
+.gif {
+  width: 30%;
+}
+
+.flex-container {
+  width: 70%;
+  justify-content: flex-start;
+}
+
+.video-container {
+  width: 50%;
+}
