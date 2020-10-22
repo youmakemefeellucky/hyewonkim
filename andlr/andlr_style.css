@@ -53,7 +53,7 @@ body {
 
 h1 {
   font-family: 'Faune', sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   text-align: center;
   color: #2C455D;
   margin: 30px 0 16px 0;
@@ -74,7 +74,7 @@ main {
 footer {
   width: 100vw;
   box-sizing: border-box;
-  padding: 20px 30px;
+  padding: 16px 20px;
   background: white;
   position: absolute;
   bottom: 0;
@@ -82,7 +82,7 @@ footer {
 
 .button_red {
   width: 100%;
-  background: #EC6153;
+  background: #EA5B0F;
   border-radius: 6px;
   color: white;
 }
@@ -95,9 +95,9 @@ footer {
   box-sizing: border-box;
   width: 100%;
   background: white;
-  border: 2px #479AB6 solid;
+  border: 1px #009DCC solid;
   border-radius: 6px;
-  color: #479AB6;
+  color: #009DCC;
   margin-top: 16px;
 }
 
@@ -119,7 +119,7 @@ footer img {
 
 h2 {
   font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   margin: 0;
 }
 
@@ -132,23 +132,26 @@ h3 {
 }
 
 .card {
-  padding: 16px 30px;
-  font-size: 16px;
+  padding: 16px 20px;
+  font-size: 14px;
   font-family: 'Open Sans', sans-serif;
 }
 
 .card_end {
-  font-size: 16px;
+  font-size: 14px;
   font-family: 'Open Sans', sans-serif;
 }
-
-.card_end .blue, .card_end .white {
+.card_end .blue {
   padding: 16px 30px;
+}
+
+.card_end .white {
+  padding: 16px 20px;
 }
 
 .credit {
   position: absolute;
-  font-size: 16px;
+  font-size: 14px;
   font-family: 'Open Sans', sans-serif;
   color: #2C455D;
   padding: 30px;
@@ -180,14 +183,10 @@ h3 {
   margin-top: 16px;
   display: grid;
   grid: auto auto auto / auto auto auto;
-  padding: 10px 30px 20px;
+  padding: 10px 20px 20px;
   text-align: center;
   justify-items: center;
   width: 100vw
-  font-size: 12px;
-  font-family: 'Open Sans', sans-serif;
-  color: #2C455D;
-  font-weight: bold;
   background: white;
 }
 
@@ -196,6 +195,10 @@ h3 {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+  color: #2C455D;
+  font-weight: bold;
 }
 
 .icons img {
