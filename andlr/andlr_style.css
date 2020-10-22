@@ -25,7 +25,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   margin: 0 0 50px 0;
-  color: #2C455D;
+  color: #25465f;
   animation: scaleup .5s;
 }
 
@@ -55,7 +55,7 @@ h1 {
   font-family: 'Faune', sans-serif;
   font-size: 20px;
   text-align: center;
-  color: #2C455D;
+  color: #25465f;
   margin: 30px 0 16px 0;
 }
 
@@ -82,7 +82,7 @@ footer {
 
 .button_red {
   width: 100%;
-  background: #EA5B0F;
+  background: #fe544b;
   border-radius: 4px;
   color: white;
 }
@@ -95,9 +95,9 @@ footer {
   box-sizing: border-box;
   width: 100%;
   background: white;
-  border: 1px #009DCC solid;
+  border: 1px #109DB9 solid;
   border-radius: 4px;
-  color: #009DCC;
+  color: #109DB9;
   margin-top: 16px;
 }
 
@@ -105,7 +105,7 @@ footer a {
   font-family: 'Open Sans', sans-serif;
   display: block;
   text-align: center;
-  padding: 16px;
+  padding: 14px;
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
@@ -126,7 +126,7 @@ h2 {
 h3 {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
-  color: #2C455D;
+  color: #25465f;
   text-align: center;
   margin: 0;
 }
@@ -153,13 +153,13 @@ h3 {
   position: absolute;
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
-  color: #2C455D;
+  color: #25465f;
   padding: 30px;
   bottom: 200px;
 }
 
 .blue {
-  background: #2C455D;
+  background: #25465f;
   color: white;
   padding: 12px;
 }
@@ -174,7 +174,7 @@ h3 {
 
 .white {
   background: white;
-  color: #2C455D;
+  color: #25465f;
   padding: 12px;
 }
 
@@ -196,7 +196,7 @@ h3 {
   width: 100%;
   font-size: 12px;
   font-family: 'Open Sans', sans-serif;
-  color: #2C455D;
+  color: #25465f;
   font-weight: bold;
 }
 
@@ -219,7 +219,7 @@ h3 {
   display: block;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  color: #2C455D;
+  color: #25465f;
   text-align: center;
 }
 
@@ -241,7 +241,7 @@ h3 {
 #orangetext {
   font-family: 'Open Sans', sans-serif;
   font-size: 24px;
-  color: #EC6153;
+  color: #fe544b;
   text-align: center;
   font-weight: bold;
   line-height: 1.1;
@@ -256,7 +256,7 @@ h3 {
 .back {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
-  color: #2C455D;
+  color: #25465f;
   font-weight: bold;
   position: absolute;
   padding-bottom: 8px;
