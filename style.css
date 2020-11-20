@@ -4,6 +4,7 @@ html, body {
   font-family: "neue-haas-grotesk-display", sans-serif;
   background: #292929;
   height: 2000px;
+  scroll-behavior: smooth;
 }
 
 .navbar {
@@ -29,6 +30,34 @@ html, body {
   letter-spacing: 1.2px;
   line-height: 1.2em;
   transition: 0.3s;
+}
+
+.sidebar {
+  display: none;
+  position: fixed;
+  top: 35vh;
+  right: -260px;
+  margin: 0 auto;
+  opacity: 60%;
+  transform: rotate(90deg);
+}
+
+.side-button {
+  height: 3.25em;
+  padding: 1em;
+  margin: 0 20px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #bfbfbf;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  line-height: 1.2em;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#side1:hover, #side2:hover, #side3:hover {
+  margin-top: -10px;
 }
 
 .name {
@@ -68,12 +97,19 @@ a:hover {
 
 #bonjour {
   position: fixed;
-  top: 35vh;
+  top: 25vh;
   left: 50vw;
   width: 40vw;
-  color: #FFEF64;
-  font-size: 5em;
   animation: fadein 3000ms;
+}
+
+#bonjour > h2 {
+  text-align: left;
+  margin: 0;
+}
+
+#bonjour > h5 {
+  margin-top: 10px;
 }
 
 @keyframes fadein {
@@ -103,10 +139,11 @@ a:hover {
 
 #p1 {
   position: relative;
-  top: 100vh;
+  margin-top: 100vh;
 }
 
 h1 {
+  padding-top: 45vh;
   color: #bfbfbf;
   font-size: 3em;
   font-weight: 600;
@@ -115,6 +152,7 @@ h1 {
 }
 
 h2 {
+  padding-top: 200px;
   color: #FFEF64;
   font-size: 5em;
   font-weight: 400;
@@ -174,6 +212,10 @@ img {
   width: 80%;
 }
 
+.big-img {
+  margin: 100px 0;
+}
+
 .left {
   float: left;
 }
@@ -188,7 +230,7 @@ img {
 
 .portfolio {
   width: 80vw;
-  margin: auto;
+  margin: 100px auto 400px;
 }
 
 .arrow {
