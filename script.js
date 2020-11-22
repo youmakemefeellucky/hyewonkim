@@ -48,16 +48,7 @@ $(document).ready(function() {
     }
   }, { threshold: [0] });
 
-  var observer3 = new IntersectionObserver(function(entries) {
-    if(entries[0].isIntersecting === true) {
-      $('#side3').css('color', '#FFEF64');
-    } else {
-      $('#side3').css('color', '#bfbfbf');
-    }
-  }, { threshold: [0] });
-
-  observer1.observe(document.querySelector("#p1-1"));
+  observer1.observe(document.querySelector("#p1-0"));
   observer2.observe(document.querySelector("#p2"));
-  observer3.observe(document.querySelector("#p3"));
 
 });
