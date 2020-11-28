@@ -357,10 +357,6 @@ a:hover {
   .mid {
     width: 100%;
   }
-
-  .first {
-    order: 1;
-  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -368,11 +364,7 @@ a:hover {
     overflow: hidden;
   }
 
-  body * {
-    display: none;
-  }
-
-  .navbar {
+  body *:not(.mobile) {
     display: none;
   }
 
