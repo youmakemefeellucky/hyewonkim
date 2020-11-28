@@ -1,8 +1,98 @@
+/* font-family: p22-underground, sans-serif; */
+/* normal 300, 400, 500, 900 */
+
+/* font-family: source-sans-pro, sans-serif; */
+/* normal italic 400, normal 700 */
+
 html, body {
   margin: 0;
-  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-family: source-sans-pro, sans-serif;
+  font-size: 16px;
   background: #292929;
   scroll-behavior: smooth;
+}
+
+/* (about) a propos, (work) portfolio,  */
+.big-gray-title {
+  padding-top: 30vh;
+  color: #bfbfbf;
+  font-family: p22-underground, sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-align: center;
+  animation: fadein 3000ms;
+}
+
+/* (index) Hyewon Kim, (index-mobile) Bonjour!, (about) Hyewon Kim, (work) Design Sprint & UI design... titles */
+.big-yellow-title {
+  padding: 2rem 0;
+  color: #FFEF64;
+  font-size: 5rem;
+  font-family: p22-underground, sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* (index-mobile) Je vous invite a visualiser...,  (work) Projet, Role, Date & Lieu, (work) Map, Sketch, User test flow...*/
+.fat-gray-title {
+  padding: 1rem 0;
+  color: #bfbfbf;
+  font-family: p22-underground, sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 0.7px;
+  font-weight: 400;
+}
+
+/* (work) Processus du projet,... */
+.slim-gray-title {
+  padding: 2rem 0;
+  color: #bfbfbf;
+  font-family: p22-underground, sans-serif;
+  font-size: 2.2rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.7px;
+  font-weight: 500;
+}
+
+/* (index) Je traduis vos idee..., (work-doctolib) list de processus */
+.big-gray-text {
+  padding: 2rem 0;
+  color: #bfbfbf;
+  font-family: p22-underground, sans-serif;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.7px;
+  font-weight: 300;
+}
+
+/* p, ol, ul */
+.gray-text {
+  color: #bfbfbf;
+  font-size: 1.2em;
+  letter-spacing: 0.5px;
+  line-height: 2em;
+}
+
+/* division line */
+hr {
+  border-top: 1px solid #bfbfbf;
+  width: 150px;
+  margin-left: 0;
+  opacity: 30%;
+}
+
+/* rounded image */
+img {
+  width: 100%;
+  border-radius: 16px;
+  margin: 16px;
+}
+
+.container {
+  margin: 0;
+  padding: 150px 100px;
 }
 
 .navbar {
@@ -30,20 +120,24 @@ html, body {
   transition: 0.3s;
 }
 
-.sidebar {
-  display: none;
+.bottombar {
   position: fixed;
-  top: 35vh;
-  right: -180px;
-  margin: 0 auto;
+  height: 50px;
+  bottom: 30px;
+  right: 150px;
   opacity: 60%;
-  transform: rotate(90deg);
+  z-index: 2;
 }
 
-.side-button {
-  height: 3.25em;
-  padding: 1em;
-  margin: 0 20px;
+.bottombar > div {
+  display: inline-block;
+}
+
+.bottom-button {
+  padding: 1rem;
+  margin: 0 10px;
+  display: inline;
+  height: 100%;
   box-sizing: border-box;
   text-align: center;
   color: #bfbfbf;
@@ -54,8 +148,22 @@ html, body {
   cursor: pointer;
 }
 
-#side1:hover, #side2:hover, #side3:hover {
-  margin-top: -10px;
+.underline {
+  margin: 0 30px;
+}
+
+.underline::after {
+  content: '';
+  display: block;
+  width: 0;
+  margin-top: 20px;
+  height: 2px;
+  background: #FFEF64;
+  transition: width .3s;
+}
+
+.underline:hover::after {
+  width: 100%;
 }
 
 .name {
@@ -81,6 +189,16 @@ html, body {
   background: rgb(41, 41, 41, 80%);
 }
 
+.flash {
+  animation: flash 1s infinite;
+}
+
+@keyframes flash {
+  0% { color: #bfbfbf; }
+  50% { color: #FFEF64; }
+  100% { color: #bfbfbf; }
+}
+
 a {
   text-decoration: none;
 }
@@ -95,19 +213,20 @@ a:hover {
 
 #bonjour {
   position: fixed;
-  top: 25vh;
+  top: 50vh;
   left: 50vw;
   width: 40vw;
   animation: fadein 3000ms;
 }
 
-#bonjour h2 {
+#bonjour > .big-yellow-title {
   text-align: left;
   margin: 0;
 }
 
-#bonjour h5 {
-  margin-top: 10px;
+#bonjour > .big-gray-text {
+  width: 80%;
+  margin-top: 20px;
 }
 
 @keyframes fadein {
@@ -115,87 +234,13 @@ a:hover {
     to   { opacity: 1; }
 }
 
-#circle {
-  animation: Move 1.5s ease-in-out infinite;
-  position: fixed;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: #FFEF64;
-  top: 90vh;
-  left: 49vw;
-}
-
-#circle:hover {
-  opacity: 0;
-}
-
 @keyframes Move {
   0%, 100% { top: 87vh; }
   50% { top: 90vh; }
 }
 
-#p1 {
-  position: relative;
-  margin-top: 100vh;
-}
-
-h1 {
-  padding-top: 45vh;
-  color: #bfbfbf;
-  font-size: 3em;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-align: center;
-}
-
-h2 {
-  padding-top: 200px;
-  color: #FFEF64;
-  font-size: 5em;
-  font-weight: 400;
-  letter-spacing: 1px;
-  text-align: center;
-}
-
-h3 {
-  color: #bfbfbf;
-  font-size: 1.8em;
-  letter-spacing: 0.7px;
-  font-weight: 600;
-}
-
-h4 {
-  color: #bfbfbf;
-  font-size: 2.2em;
-  letter-spacing: 0.7px;
-  font-weight: 500;
-}
-
-h5 {
-  color: #bfbfbf;
-  font-size: 2em;
-  letter-spacing: 0.7px;
-  font-weight: 400;
-}
-
-p, ol, ul {
-  color: #bfbfbf;
-  font-size: 1.2em;
-  letter-spacing: 0.5px;
-  line-height: 2em;
-}
-
-hr {
-  border-top: 1px solid #bfbfbf;
-  width: 150px;
-  margin-left: 0;
-  opacity: 30%;
-}
-
-img {
-  width: 100%;
-  border-radius: 16px;
+.work {
+  padding-bottom: 200px;
 }
 
 .quote {
@@ -207,6 +252,10 @@ img {
   color: #FFEF64;
 }
 
+.main-img {
+  margin: 50px 0;
+}
+
 .small-img {
   width: 80%;
   margin-top: 50px;
@@ -214,6 +263,11 @@ img {
 
 .big-img {
   margin: 100px 0;
+}
+
+.mid {
+  margin: 100px auto;
+  width: 60%;
 }
 
 .left {
@@ -228,9 +282,11 @@ img {
   text-align: center;
 }
 
-.portfolio {
-  width: 80vw;
-  margin: 100px auto 300px;
+#portfolio {
+  position: relative;
+  top: 40vh;
+  width: 100%;
+  margin: 300px auto;
 }
 
 .arrow {
@@ -255,26 +311,22 @@ img {
 }
 
 .flex-item {
-  flex-basis: 42%;
+  flex: 1;
   margin: 20px;
-  padding: 30px 20px;
+  padding: 40px 50px;
 }
 
 .card {
   flex: 1;
   margin: 20px;
   padding: 30px 48px;
-  box-shadow: 12px 12px 16px #1b1b1b, -12px -12px 16px #2f2f2f;
+  background: #242424;
   border-radius: 16px;
 }
 
 .shadow {
-  box-shadow: 12px 12px 16px #1b1b1b, -12px -12px 16px #2f2f2f;
+  background: #242424;
   border-radius: 16px;
-}
-
-.main-image {
-  margin: 50px 0;
 }
 
 .mobile {
@@ -282,9 +334,10 @@ img {
 }
 
 .footer {
-  width: 80vw;
-  margin: 0 auto;
-  padding-bottom: 30px;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin: 300px auto 50px auto;
 }
 
 .button-container {
@@ -298,6 +351,16 @@ img {
 .solobutton {
   flex: 1;
   margin: 0 5px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .mid {
+    width: 100%;
+  }
+
+  .first {
+    order: 1;
+  }
 }
 
 @media only screen and (max-width: 600px) {

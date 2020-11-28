@@ -1,54 +1,28 @@
 $(document).ready(function() {
 
+  $( '#button-doc' ).click(function() {
+      $( this ).css( 'color', '#FFEF64' );
+      $( this ).siblings().css( 'color', '#bfbfbf' );
+      $( '#portfolio' ).load( "doctolib" ).fadeIn();
+      $( 'html, body' ).animate({scrollTop: window.innerHeight}, 300);
+  });
 
-
-  // Show & hide welcome text, circle on scroll
-  var lastScrollTop = 0;
-  $(document).scroll(function() {
-    var scrollTop = $(this).scrollTop();
-    if (scrollTop > lastScrollTop) {
-      $('#bonjour').hide();
-      $('#circle').hide();
-      $('.works').css('color','#FFEF64');
-    } else {
-      $('#bonjour').fadeIn(800);
-      $('#circle').fadeIn(800);
-      $('.works').css('color','#bfbfbf');
-    }
+  $( '#button-arc' ).click(function() {
+      window.scrollTo(0, 0);
+      $( this ).css( 'color', '#FFEF64' );
+      $( this ).siblings().css( 'color', '#bfbfbf' );
+      $( 'html, body' ).animate({scrollTop: window.innerHeight}, 300);
+      $( '#portfolio' ).load( "archisport" ).fadeIn();
   });
 
 
-
-  // Show & hide sidebar
-  $(document).scroll(function() {
-    var y = $(this).scrollTop();
-    if (y > 300) {
-      $('.sidebar').fadeIn();
-    } else {
-      $('.sidebar').fadeOut();
-    }
+  $( '#button-kei' ).click(function() {
+      window.scrollTo(0, 0);
+      $( this ).css( 'color', '#FFEF64' );
+      $( this ).siblings().css( 'color', '#bfbfbf' );
+      $( 'html, body' ).animate({scrollTop: window.innerHeight}, 300);
+      $( '#portfolio' ).load( "keisuke" ).fadeIn();
   });
 
-
-
-  // Sidebar (refactoring required !)
-  var observer1 = new IntersectionObserver(function(entries) {
-  	if(entries[0].isIntersecting === true) {
-      $('#side1').css('color', '#FFEF64');
-    } else {
-      $('#side1').css('color', '#bfbfbf');
-    }
-  }, { threshold: [0] });
-
-  var observer2 = new IntersectionObserver(function(entries) {
-    if(entries[0].isIntersecting === true) {
-      $('#side2').css('color', '#FFEF64');
-    } else {
-      $('#side2').css('color', '#bfbfbf');
-    }
-  }, { threshold: [0] });
-
-  observer1.observe(document.querySelector("#p1-0"));
-  observer2.observe(document.querySelector("#p2"));
 
 });
