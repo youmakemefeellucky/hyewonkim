@@ -25,4 +25,12 @@ $(document).ready(function() {
   });
 
 
+  $( '#button-aut' ).click(function() {
+      window.scrollTo(0, 0);
+      $( this ).css( 'color', '#FFEF64' );
+      $( this ).siblings().css( 'color', '#bfbfbf' );
+      $( 'html, body' ).animate({scrollTop: window.innerHeight}, 300);
+      $( '#portfolio' ).load( "autres" ).fadeIn();
+  });
+
 });

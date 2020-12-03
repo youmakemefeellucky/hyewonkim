@@ -1,0 +1,61 @@
+<div id="autres" class="work">
+
+  <h2 class="big-yellow-title">Réseaux sociaux & banners</h2>
+  <p class="gray-text text-center">Once Again Paris - Agence de tourisme</p>
+
+  <section class="flex-container">
+    <div class="flex-item">
+      <img class="big-img" src="img/autres/onceagainparis1.png">
+    </div>
+  </section>
+  <section class="flex-container">
+    <div class="flex-item">
+      <img class="big-img" src="img/autres/onceagainparis2.png">
+    </div>
+  </section>
+
+
+  <img src="img/arrow.svg" class="arrow">
+
+
+  <h2 class="big-yellow-title">Print & package</h2>
+  <p class="gray-text text-center">Tumbrella - Parapluie durable</p>
+
+  <div class="container">
+    <img class="big-img" src="img/autres/tumbrella1.png">
+  </div>
+  <div class="flex-container" style="justify-content:center;">
+    <img class="small-img" src="img/autres/tumbrella2.jpg" style="max-width:40vw; justify-content:center;">
+    <img class="small-img" src="img/autres/tumbrella3.jpg" style="max-width:40vw; justify-content:center;">
+  </div>
+
+
+  <img src="img/arrow.svg" class="arrow">
+
+
+  <h2 class="big-yellow-title">Motion design</h2>
+  <p class="gray-text text-center">Projets personnels</p>
+
+  <div class="flex-container">
+    <img class="small-img" src="img/autres/helloworld.gif" style="max-width:25vw;">
+    <img class="small-img" src="img/autres/stayhome.gif" style="max-width:25vw;">
+    <img class="small-img" src="img/autres/waterfall2.gif" style="max-width:25vw;">
+  </div>
+
+
+
+  <img src="img/arrow.svg" class="arrow">
+
+
+  <h2 class="big-yellow-title">Photographies</h2>
+  <p class="gray-text text-center">Bush & Associates architecture</p>
+
+
+  <div class="flex-container" style="justify-content:center;">
+    <img class="small-img" src="img/autres/bush1.jpg" style="max-width:40vw; justify-content:center;">
+    <img class="small-img" src="img/autres/bush2.jpg" style="max-width:40vw; justify-content:center;">
+  </div>
+  <img src="img/autres/bush3.jpg" class="big-img">
+
+
+</div>
