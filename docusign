@@ -3,6 +3,7 @@
   <h2 class="big-yellow-title">Product Design</h2>
   <p class="gray-text text-center">DocuSign</p>
 
-  <img class="main-img" src="img/docusign/idv.png">
-
+  <div class="mid">
+    <img src="img/docusign/idv.png">
+  </div>
 </div>
